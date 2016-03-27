@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FCE234F-D25C-446D-8526-C6A90F2D4CED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOARDBoss</RootNamespace>
+    <AssemblyName>BOARDBoss</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>ADC3D6EFDD37BCBF27A40B804BDCE9E889278940</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AVSPriceBoardMaker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Presentation\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Presentation\AboutApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\AboutApp.Designer.cs">
+      <DependentUpon>AboutApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\BoardSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\BoardSelect.Designer.cs">
+      <DependentUpon>BoardSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Customizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Customizer.Designer.cs">
+      <DependentUpon>Customizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\GlobalFunctions.cs" />
+    <Compile Include="Presentation\MainApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\MainApp.Designer.cs">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SaveImageName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SaveImageName.Designer.cs">
+      <DependentUpon>SaveImageName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SaveBoardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SaveBoardDialog.Designer.cs">
+      <DependentUpon>SaveBoardDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\XMLRead.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\AboutApp.resx">
+      <DependentUpon>AboutApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\BoardSelect.resx">
+      <DependentUpon>BoardSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Customizer.resx">
+      <DependentUpon>Customizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\MainApp.resx">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SaveImageName.resx">
+      <DependentUpon>SaveImageName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SaveBoardDialog.resx">
+      <DependentUpon>SaveBoardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Presentation\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Icon-BOARDBoss.png" />
+    <None Include="Resources\ScreenLayout4.png" />
+    <None Include="Resources\ScreenLayout3.png" />
+    <None Include="Resources\ScreenLayout2V.png" />
+    <None Include="Resources\ScreenLayout2H.png" />
+    <None Include="Resources\ScreenLayout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Frames\" />
+    <Folder Include="bin\Release\Frames\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
