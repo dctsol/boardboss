@@ -173,7 +173,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.ico" />
     <Content Include="Icon.ico" />
     <None Include="Resources\Icon-BOARDBoss.png" />
     <None Include="Resources\ScreenLayout4.png" />
